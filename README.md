@@ -73,7 +73,8 @@ nodemon 같은 경우 npm start를 해주면 로컬에서와 마찬가지로 실
 
 * **pwd** : 현 디렉터리 위치를 표시해줍니다.
 
-* **ls** : 현 디렉터리있는  표시해줍니다.
+* **ls** : 현 디렉터리있는 폴더들을 표시해줍니다.
+
 ![6번_파일 실행](https://user-images.githubusercontent.com/63000843/98461118-f74dc680-21ec-11eb-9d5e-43ab2507bdf4.PNG)
 
 ## 보안그룹
