@@ -44,7 +44,7 @@ AWS EC2에 접속하셔서 _**인스턴스 시작**_ 을 눌러줍니다.
   
   **윈도우 환경에서는 ssh를 사용할 수 없으니 google에 윈도우에서 ssh를 사용할 수 있는 방법을 검색 후 설정을 해줍니다.**
   디렉터리를 키 페어가 있는 곳을 설정해줬다면 아까 복사했던 __**ssh -i 명령어**__ 를 실행시켜줍니다.
-  
+  [윈도우에서 ssh 설정](https://amorfati-1000.tistory.com/50)
 ![2번_update](https://user-images.githubusercontent.com/63000843/98461111-f3ba3f80-21ec-11eb-938f-614ada35af5a.PNG)
 ![3번_node_npm 설치](https://user-images.githubusercontent.com/63000843/98461112-f3ba3f80-21ec-11eb-8808-6726db1b61bc.PNG)
 ![4번_nodejs](https://user-images.githubusercontent.com/63000843/98461113-f452d600-21ec-11eb-9a28-59f7bc0288d3.PNG)
@@ -67,5 +67,27 @@ nodemon 같은 경우 npm start를 해주면 로컬에서와 마찬가지로 실
 
 ## 보안그룹
 아마 위 같이 실행시켜도 퍼블릭 ip로 접속할수 없습니다. 보안그룹이 설정되지 않아서 그런겁니다.
+
+따라서 보안 그룹 설정을 해주어야 합니다. EC2 말고 대부분 AWS 클라우드 서비스는 보안그룹 설정을 해주야 합니다.
+![보안그룹_01](https://user-images.githubusercontent.com/63000843/98461500-e94d7500-21ef-11eb-970a-2c4f8b846677.PNG)
+### 1)
+인스턴스 화면에서 __**보안 그룹 이름**__ 을 확인해줍니다. 
+![보안그룹_02](https://user-images.githubusercontent.com/63000843/98461502-e9e60b80-21ef-11eb-9aa1-c57aa73610ca.PNG)
+### 2)
+__**보안 그룹**__ 으로 이동 후 아까 확인한 __**보안 그룹 이름**__ 을 클릭합니다.
+![보안그룹_03](https://user-images.githubusercontent.com/63000843/98461504-ea7ea200-21ef-11eb-9340-15b62578af99.PNG)
+### 3)
+__**보안 그룹 이름**__ 으로 이동 후 __**인바운드 규칙 편집**__ 을 클릭합니다.
+
+![보안그룹_04](https://user-images.githubusercontent.com/63000843/98461505-eb173880-21ef-11eb-8576-e28051b7a1b9.PNG)
+### 4)
+이미지처럼 __**Nodejs가 실행될 포트**__ 를 지정해줍니다.
+
+### 나를 위한 EC2 사용 방법 끝 :)
+
+
+
+
+
 
   
